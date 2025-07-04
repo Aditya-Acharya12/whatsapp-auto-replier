@@ -8,6 +8,7 @@ dist/
 build/
 *.log
 *.db
+*.pyc
 
 # === Virtual Environment ===
 venv/

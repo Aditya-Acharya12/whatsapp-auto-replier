@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import time
 import os
+from llm import get_llm_reply
 
 CHROME_DRIVER_PATH = 'chromedriver.exe'  # Path to your ChromeDriver executable
 
@@ -38,7 +39,7 @@ def get_last_message(driver):
     try:
         messages = driver.find_elements(
             By.XPATH,
-            '//div[contains(@class, "message-in") or contains(@class, "message-out")]'
+            '//div[contains(@class, "message-in")]'
         )
 
         if not messages:
@@ -68,4 +69,14 @@ if __name__ == "__main__":
         if msg and msg != last_seen:
             print("New message:", msg)
             last_seen = msg
+
+            reply = get_llm_reply(msg)
+            print("Replying with:", reply)
+
+            try:
+                input_box = driver.find_element(By.XPATH, '//div[@contenteditable="true"][@data-tab="10"]')
+                input_box.send_keys(reply)
+                input_box.send_keys("\n")  # Press Enter to send
+            except Exception as e:
+                print("Error sending message:", e)
         time.sleep(2)
