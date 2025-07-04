@@ -1,0 +1,71 @@
+# === Python Artifacts ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.db
+
+# === Virtual Environment ===
+venv/
+env/
+ENV/
+.venv/
+
+# === IDEs & Editors ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === OS & Misc Files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === ChromeDriver & WebDriver-related ===
+chromedriver
+chromedriver.exe
+chromedriver.log
+
+# === Selenium Browser Profile Data ===
+profile/
+selenium-profile/
+.user-data-dir/
+
+# === Credentials or Environment Variables ===
+.env
+*.key
+*.pem
+secrets.json
+token.txt
+
+# === Jupyter Notebooks (if you ever use them) ===
+.ipynb_checkpoints/
+
+# === Git backup/merge files ===
+*.orig
+*.rej
+
+# === Test/output folders ===
+output/
+logs/
+screenshots/
+test-output/
+coverage/
+
+# === PyInstaller / Packaging ===
+*.spec
+
+# === Node.js (if you use it for UI later) ===
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# === System-wide lock or temp files ===
+*.lock
+*.bak
+*.tmp
