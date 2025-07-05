@@ -70,3 +70,9 @@ yarn-error.log
 *.lock
 *.bak
 *.tmp
+
+# === Project-Specific: RAG WhatsApp Bot ===
+data/chat_data.json
+data/chat_chunks.json
+data/embeddings.pkl
+# data/*.json  # optional: exclude all JSON files in data/
