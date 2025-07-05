@@ -74,7 +74,8 @@ if __name__ == "__main__":
             print("Replying with:", reply)
 
             try:
-                input_box = driver.find_element(By.XPATH, '//div[@contenteditable="true"][@data-tab="10"]')
+                input_box = driver.find_element(By.XPATH, '//footer//div[@contenteditable="true"]')
+                time.sleep(1)
                 input_box.send_keys(reply)
                 input_box.send_keys("\n")  # Press Enter to send
             except Exception as e:

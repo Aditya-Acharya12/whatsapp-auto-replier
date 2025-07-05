@@ -75,4 +75,5 @@ yarn-error.log
 data/chat_data.json
 data/chat_chunks.json
 data/embeddings.pkl
+data/chat_chunks_embedded.json
 # data/*.json  # optional: exclude all JSON files in data/
