@@ -76,4 +76,6 @@ data/chat_data.json
 data/chat_chunks.json
 data/embeddings.pkl
 data/chat_chunks_embedded.json
+bot_state.json
+bot_pid.txt
 # data/*.json  # optional: exclude all JSON files in data/
