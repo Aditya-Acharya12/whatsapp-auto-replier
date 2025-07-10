@@ -10,10 +10,6 @@ A Python-based WhatsApp automation bot that reads incoming messages using Seleni
 - **RAG-based context injection** using past chats
 - **Selenium automation** for web interaction
 - **Custom chat selector** for auto-targeting specific chats
-- **CLI toggle** to turn the bot on/off (planned)
-- **Fallback rule-based replies** in case of LLM failure (planned)
-- **Hidden/background execution** (planned)
-- **Logging of all interactions** (planned)
 
 ## 🛠️ Tech Stack
 
